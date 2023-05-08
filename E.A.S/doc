@@ -1,4 +1,4 @@
-E.A.S (Easy Animation Scroll)
+E.A.S (Easy Animation Scroll) Version 1.1 at 23/05/08
 
 E.A.S is a free library of animations designed to be easily modifiable. It provides a set of pre-defined CSS classes and 
 JavaScript functions to add animation effects to elements when they enter or leave the viewport. 
@@ -30,13 +30,26 @@ Data Attributes
 Here is a list of all data attributes that can be used with E.A.S and their respective definitions:
 
 - `eas-animate` – This will add an animation to the element. By default, it will be a simple fade-in, but you can customize it using one of the following values:
+    - `bounce-in`
+    - `bounce-out`
     - `fade-in`
     - `fade-out`
-    - `zoom`
+    - `zoom-in`
+    - `zoom-out`
+    - `spin-left`
+    - `spin-right`
     - `slide-left`
     - `slide-right`
     - `slide-top`
     - `slide-bottom`
+
+    Special animation : 
+    - `pulse`
+    - `shake`
+    - `swing`
+    - `tada`
+    - `wobble`
+    
 
 Example usage: `eas-animate="fade-in"`
 
@@ -57,7 +70,17 @@ Example usage: `eas-delay="500"`
 
 Example usage: `eas-easing="ease-in-out"`
 
-- `eas-infinite` – This will either activate the infinite animation or not. By default, it is set to `false`.
+- `eas-direction` - This will affect the direction of the animation. You can customize it using one of the following values: 
+    -`normal`
+    -`reverse`
+    -`alternate`
+    -`alternate-reverse`
+
+Example usage : `eas-direction="normal"`
+
+- `eas-iteration` - This will affect the number of time the animation will played once inside the viewport, you can customize it by changing the number. By default, it is set to `1` you can also use `infinite`
+
+- `eas-infinite` – This will either activate the infinite animation or not. By default, it is set to    `false`.
 
 Example usage: `eas-infinite="true"`
 
